@@ -1,6 +1,25 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+var posicion = 0;
+var vreproductor = document.getElementById("reproductor");
+var origen = vreproductor.getElementsByTagName("source")[0];
+var vbtnReproducir = document.getElementById("btnReproducir");
+var vbtnpausa = document.getElementById("btnPausa");
+var vbtnDetener = document.getElementById("btnDetener");
+vreproductor.load();
 
-console.log('Happy hacking :)')
+vbtnReproducir.addEventListener("click", reproducir);
+vbtnpausa.addEventListener("click", pausa);
+vbtnDetener.addEventListener("click", detener);
+
+
+function reproducir() {
+    vreproductor.play();
+}
+
+function pausa() {
+    vreproductor.pause();
+}
+
+function detener() {
+    vreproductor.pause();
+    vreproductor.currentTime = 0;
+}
