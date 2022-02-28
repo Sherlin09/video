@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/video/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Web site created using create-snowpack-app" />
+    <!--
+      Snowpack will replace /video/ with the value you have for `baseUrl` in `snowpack.config.js`.
+      Make sure to update it with your GitHub Page URL. https://<your-username>.github.io/<your-repo-name>
+
+      More about config options:
+      - https://www.snowpack.dev/reference/configuration#buildoptions.baseurl
+    -->
+    <link rel="stylesheet" type="text/css" href="/video/_dist_/index.css" />
+    <title>Snowpack & Tailwind App</title>
+</head>
+
+<body>
+    <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+
+            <h3 class="center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                The reason
+            </h3>
+            <br><br>
+
+            <fieldset class="text-center">
+
+                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" id="reproductor">
+            <source src="/video/_dist_/Thereason.mp4" type="video/mp4">
+          </video>
+                <br>
+                <br>
+                <button id="btnReproducir" value="Reproducir" type="reset" class="py-2 px-4 bg-blue-500 rounded-md shadow-sm font-medium hover:bg-blue-900 transition duration-700 ease-in-out">
+              Reproducir
+            </button>
+                <button id="btnPausa" value="Pausa" type="reset" class="py-2 px-4 bg-blue-500 rounded-md shadow-sm font-medium hover:bg-blue-900 transition duration-700 ease-in-out">
+              Pausa
+            </button>
+                <button id="btnDetener" value="Detener" type="reset" class="py-2 px-4 bg-blue-500 rounded-md shadow-sm font-medium hover:bg-blue-900 transition duration-700 ease-in-out">
+              Reiniciar
+            </button>
+        </div>
+    </div>
+
+    <!-- Add more scripts here -->
+    <script type="module" src="/video/_dist_/index.js"></script>
+</body>
+
+</html>
